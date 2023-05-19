@@ -3,35 +3,20 @@
 <head>
   <title>Calendar Widget</title>
   <style>
-    .calendar {
-      border: 2px solid black;
-      border-radius: 10px;
-      padding: 10px;
-      width: 200px;
-      text-align: center;
-    }
-
-    .date {
-      font-size: 20px;
+    /* Calendar Widget CSS */
+    .calendar-widget {
+      position: absolute;
+      width: 714px;
+      height: 336px;
+      left: 1033px;
+      top: 390px;
+      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.6));
     }
   </style>
 </head>
 <body>
-  <div class="calendar">
-    <div class="date">
-      Today's Date: <span id="today"></span>
-    </div>
+  <div class="calendar-widget">
+    <!-- Calendar content goes here -->
   </div>
-
-  <script>
-    // Get the current date
-    var today = new Date();
-
-    // Format the date as "YYYY-MM-DD"
-    var formattedDate = today.toISOString().split('T')[0];
-
-    // Set the formatted date as the content of the "today" span element
-    document.getElementById('today').textContent = formattedDate;
-  </script>
 </body>
 </html>
